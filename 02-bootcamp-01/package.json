@@ -1,0 +1,13 @@
+{
+  "name": "02-bootcamp-01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy" : "tar -acf index.zip index.js responses/** functions/** && aws lambda update-function-code --function-name bootcampApiCalls --zip-file fileb://index.zip"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
