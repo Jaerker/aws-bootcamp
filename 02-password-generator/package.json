@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy" : "tar -acf index.zip index.js responses/** functions/** && aws lambda update-function-code --function-name bootcampApiCalls --zip-file fileb://index.zip"
+    "deploy" : "tar -acf index.zip index.mjs responses/** functions/** && aws lambda update-function-code --function-name myPasswordGenerator --zip-file fileb://index.zip"
   },
   "keywords": [],
   "author": "",
